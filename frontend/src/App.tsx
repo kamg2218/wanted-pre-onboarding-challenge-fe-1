@@ -1,19 +1,18 @@
-import { Navigate, Route, Routes } from 'react-router'
+import Router from './router'
 
-import SignUp from './pages/SignUp'
-import SignIn from './pages/SingIn'
-
-import './assets/reset.css'
+import styled from 'styled-components'
 
 function App() {
   return (
-    <Routes>
-      <Route path='/signin' element={<SignIn />} />
-      <Route path='/signup' element={<SignUp />} />
-      <Route path='/' element={<Navigate to={'/signin'} />} />
-      <Route path='*' element={<Navigate to={'/signin'} />} />
-    </Routes>
+    <Container>
+      <Router />
+    </Container>
   )
 }
 
 export default App;
+
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
