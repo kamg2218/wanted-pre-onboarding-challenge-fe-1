@@ -3,7 +3,9 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      TO DO LIST
+      <div>할 일 목록</div>
+      {
+      }
     </div>
   );
 };

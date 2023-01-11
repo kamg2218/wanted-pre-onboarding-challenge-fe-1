@@ -1,10 +1,12 @@
 import Router from './router'
 
 import styled from 'styled-components'
+import Header from './components/Common/Header';
 
 function App() {
   return (
     <Container>
+      <Header />
       <Router />
     </Container>
   )
